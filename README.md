@@ -10,8 +10,9 @@ want to add records to.
 To create an HTTPS record saying `example.com` is available via http/2 over TLS:
 
 ```hcl
-module "tea_sh_https" {
-  source  = "brainsik/dns-https/cloudflare"
+module "example_com_https" {
+  source = "brainsik/dns-https/cloudflare"
+
   zone_id = "313372600deadcodebea5751993defc0"
   name    = "example.com"
 
@@ -22,8 +23,9 @@ module "tea_sh_https" {
 To create an HTTPS record saying `example.com` is available via http/3 or http/2 over TLS with IPs to use for initially establishing a connection:
 
 ```hcl
-module "tea_sh_https" {
-  source  = "brainsik/dns-https/cloudflare"
+module "example_com_https" {
+  source = "brainsik/dns-https/cloudflare"
+
   zone_id = "313372600deadcodebea5751993defc0"
   name    = "example.com"
 
